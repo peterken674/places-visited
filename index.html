@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Places</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row flex-nowrap">
+            <div class="col-6 mt-4">
+                <h1 class="my-4">Places</h1>
+                <p>This is a form to list places that I have visited.</p>
+                <form id="placesForm" class="border p-4">
+                    <div class="form-group">
+                      <label for="placeName">Place Name</label>
+                      <input type="text" name="placeName" id="placeName" class="form-control" placeholder="e.g. Maasai Mara" >
+                    </div>
+                    <div class="form-group">
+                      <label for="county">County</label>
+                      <input type="text" name="county" id="county" class="form-control" placeholder="e.g. Kajiado" >
+                    </div>
+                    <div class="form-group">
+                      <label for="landmarks">Landmarks</label>
+                      <input type="text" name="landmarks" id="landmarks" class="form-control" placeholder="e.g. Aora Hill" >
+                    </div>
+                    <div class="form-group">
+                      <label for="date">Date</label>
+                      <input type="date" name="date" id="date" class="form-control" placeholder="" >
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Add Place</button>
+                </form>
+                <h3 class="my-4">List of Places</h3>
+                <ul id="places"></ul>
+            </div>
+            <div class="col-6 mt-5 ml-5">
+                <div class="show-place">
+                    <h2></h2>
+
+                    <p>Place Name: <span class="detName"></span></p>
+                    <p>County: <span class="detCounty"></span></p>
+                    <p>Landmarks: <span class="detLandmarks"></span></p>
+                    <p>Date: <span class="detDate"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

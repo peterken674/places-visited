@@ -1,0 +1,10 @@
+#places{
+    list-style:circle;
+}
+.place:hover{
+    color: blue;
+    cursor: pointer;
+}
+.show-place{
+    display: none;
+}
